@@ -1,2 +1,20 @@
-[[fetch]]
-files = [""]
+<!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <title>Test</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="https://pyscript.net/releases/2023.05.1/pyscript.css" />
+    <script defer src="https://pyscript.net/releases/2023.05.1/pyscript.js"></script>
+  </head>
+  <body>
+    <py-script>
+      import mymodule
+      mymodule.test()
+    </py-script>
+    <py-config>
+      [[fetch]]
+      files = ["https://raw.githubusercontent.com/JoshuaLowe1002/pyscript-test/main/mymodule.py"]
+    </py-config>
+  </body>
+</html>
